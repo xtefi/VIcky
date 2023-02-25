@@ -17,7 +17,6 @@ namespace UI
         public Personas operario1;
         public Personas directivo1;
         public Personas admin1;
-        public Personas nuevo;
 
         public UI()
         {
@@ -29,13 +28,16 @@ namespace UI
             personasLista.Add(operario1);
             personasLista.Add(directivo1);
             personasLista.Add(admin1);
-            MostrarPersonas();
             CargarCategorias();
         }
+        private void UI_Load(object sender, EventArgs e)
+        {
 
+        }
 
         private void btnNuevoEmpleado_Click(object sender, EventArgs e)
         {
+            Personas nuevo;
             try
             {
                 switch (cbxCategorias.SelectedIndex)
@@ -46,8 +48,7 @@ namespace UI
                         MostrarPersonas();
                         break;
                     case 1:
-                        //nuevo = new Operarios(tbxNombre.Text, tbxApellido.Text, tbxLegajo.Text, (float)numSueldo.Value);
-                        nuevo = new Operarios("Rodrigo", "Tulian", "90180", 100000);
+                        nuevo = new Operarios(tbxNombre.Text, tbxApellido.Text, tbxLegajo.Text, (float)numSueldo.Value);
                         personasLista.Add(nuevo);
                         MostrarPersonas();
                         break;
@@ -73,7 +74,9 @@ namespace UI
         }
         public void MostrarPersonas()
         {
+            dgrPersonas.DataSource = null;
             dgrPersonas.DataSource = personasLista;
         }
+
     }
 }

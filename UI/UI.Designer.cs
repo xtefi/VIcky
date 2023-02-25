@@ -214,6 +214,7 @@ namespace UI
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "UI";
             this.Text = "Administrador de adelantos";
+            this.Load += new System.EventHandler(this.UI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgrPersonas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgrAdelantos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
