@@ -7,29 +7,27 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //Personas op = new Operarios();
+            //Adelantos a = new Adelantos("1234ABCD", op);
+            //Adelantos b = new Adelantos("123AABCD", op);
+            //Adelantos c = new Adelantos("12345BCD", op);
+            //Adelantos d = new Adelantos("1234AB-D", op);
+            
 
-            Adelantos a = new Adelantos("1234ABCD");
-            Adelantos b = new Adelantos("123AABCD");
-            Adelantos c = new Adelantos("12345BCD");
-            Adelantos d = new Adelantos("1234AB-D");
+            //List<Adelantos> l = new List<Adelantos>();
 
-            List<Adelantos> l = new List<Adelantos>();
+            //l.Add(a);
+            //l.Add(b);
+            //l.Add(c);            
+            //l.Add(d);
 
-            l.Add(a);
-
-            l.Add(b);
-
-            l.Add(c);
-
-            l.Add(d);
-
-            foreach(Adelantos i in l)
-            {
-                Console.WriteLine(i.Mostrar());
-            }
+            //foreach(Adelantos i in l)
+            //{
+            //    Console.WriteLine(i.Mostrar());
+            //}
 
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
