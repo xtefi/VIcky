@@ -10,7 +10,10 @@ namespace Entidades
         private string legajo;
         private string sueldo;
 
+        public Personas()
+        {
 
+        }
 
 
     }
